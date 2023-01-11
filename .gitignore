@@ -1,0 +1,12 @@
+.DS_Store
+
+# aws-lambda-container-image-ml-model
+## exploration
+aws-lambda-container-image-ml-model/exploration
+aws-lambda-container-image-ml-model/exploration/*
+
+## aws-lambda-ecr-ml-model-template
+aws-lambda-container-image-ml-model/aws-lambda-ecr-ml-model-template/.aws-sam
+aws-lambda-container-image-ml-model/aws-lambda-ecr-ml-model-template/.aws-sam/*
+
+aws-lambda-container-image-ml-model/aws-lambda-ecr-ml-model-template/samconfig.toml
