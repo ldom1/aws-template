@@ -60,14 +60,14 @@ class DeploymentWorkflow(Stack):
 env = Environment(account=AWS_ACCOUNT, region=REGION)
 app = App()
 
-glue_workflow_func = DeploymentWorkflow(
+aws_data_analytics_glue_workflow = DeploymentWorkflow(
     scope=app,
     id=STACK_NAME,
     env=env
 )
 
-Tags.of(glue_workflow_func).add('cdh-cart', TAG_CDH_CART)
-Tags.of(glue_workflow_func).add('cdh-owner', TAG_CDH_OWNER)
-Tags.of(glue_workflow_func).add('cdh-application', TAG_CDH_APPLICATION)
+Tags.of(aws_data_analytics_glue_workflow).add('cdh-cart', TAG_CDH_CART)
+Tags.of(aws_data_analytics_glue_workflow).add('cdh-owner', TAG_CDH_OWNER)
+Tags.of(aws_data_analytics_glue_workflow).add('cdh-application', TAG_CDH_APPLICATION)
 
 app.synth()
