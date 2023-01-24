@@ -10,3 +10,11 @@ aws-lambda-container-image-ml-model/aws-lambda-ecr-ml-model-template/.aws-sam
 aws-lambda-container-image-ml-model/aws-lambda-ecr-ml-model-template/.aws-sam/*
 
 aws-lambda-container-image-ml-model/aws-lambda-ecr-ml-model-template/samconfig.toml
+
+# aws-data-analytics-glue-workflow
+aws-data-analytics-glue-workflow/.venv
+aws-data-analytics-glue-workflow/.ipynb_checkpoints
+aws-data-analytics-glue-workflow/exploration
+aws-data-analytics-glue-workflow/requirements.txt
+aws-data-analytics-glue-workflow/deployment/config/*
+aws-data-analytics-glue-workflow/deployment/config
