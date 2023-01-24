@@ -1,7 +1,7 @@
 import os.path
 from constructs import Construct
 from aws_cdk import App, Environment, Stack, Tags, aws_glue as glue
-from config.global_variables import GLUE_WORKFLOW_NAME, AWS_ACCOUNT, REGION, STACK_NAME, TAG_CDH_APPLICATION, TAG_CDH_CART, TAG_CDH_OWNER, GLUE_SCRIPTS_PATH, BUCKET_NAME
+from .config.global_variables import GLUE_WORKFLOW_NAME, AWS_ACCOUNT, REGION, STACK_NAME, TAG_CDH_APPLICATION, TAG_CDH_CART, TAG_CDH_OWNER, GLUE_SCRIPTS_PATH, BUCKET_NAME
 from utils.glue_utils import create_glue_job, create_job_trigger, create_startup_trigger
 
 dir_name = os.path.dirname(__file__)
