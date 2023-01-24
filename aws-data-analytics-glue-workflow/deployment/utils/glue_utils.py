@@ -2,7 +2,7 @@ from ast import Raise
 import string
 from aws_cdk import aws_glue as glue
 
-from config.global_variables import CDH_PROJECT_ROLE_ARN, GLUE_SCRIPTS_BUCKET_NAME, GLUE_STARTUP_TRIGGER
+from config.global_variables import CDH_PROJECT_ROLE_ARN, GLUE_STARTUP_TRIGGER
 
 # GLUE JOBS PARAMS
 GLUE_JOB_ALLOCATED_CAPACITY = 10
@@ -43,7 +43,7 @@ def create_glue_job(
         glue_version=GLUE_VERSION,
         command=glue.CfnJob.JobCommandProperty(
             name='glueetl',
-            script_location=f's3://{GLUE_SCRIPTS_BUCKET_NAME}/glue-scripts/{glue_job_path}',
+            script_location=glue_job_path,
             python_version=PYTHON_VERSION
         ),
         default_arguments=default_arguments

@@ -6,7 +6,7 @@ source .venv/bin/activate
 python -m pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org --upgrade pip
 python -m pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org jupyter pandas numpy matplotlib pyarrow==2 awswrangler
 python -m pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org fastdtw scikit-learn scipy tslearn
-python -m pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org boto3 aws-glue-sessions==0.32 aws-cdk-lib
+python -m pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org boto3 aws-glue-sessions==0.32 aws-cdk-lib awscli
 pip freeze > requirements.txt
 jupyter kernelspec install .venv/lib/$python_version/site-packages/aws_glue_interactive_sessions_kernel/glue_pyspark
 jupyter kernelspec install .venv/lib/$python_version/site-packages/aws_glue_interactive_sessions_kernel/glue_spark
