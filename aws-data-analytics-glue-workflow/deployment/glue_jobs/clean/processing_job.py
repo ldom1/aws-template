@@ -76,6 +76,6 @@ df = (
 
 # Write the final dataset
 df.write.mode("overwrite").save(
-    "s3://{BUCKET_NAME}/esgbu_dpv/plant_production/gold",
+    f"s3://{BUCKET_NAME}/esgbu_dpv/plant_production/gold",
     format='parquet'
 )
